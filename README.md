@@ -10,11 +10,13 @@ I received access to cloud TPUs through TPU Research Cloud Program for computer 
 X. Usage of checkpoints
 - https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/ModelCheckpoint
 X. Saving models
-# serialize model to json
+```
+serialize model to json
 json_model = model.to_json()
 #save the model architecture to JSON file
 with open('fashionmnist_model.json', 'w') as json_file:
     json_file.write(json_model)
+```
     
 - https://www.tensorflow.org/api_docs/python/tf/keras/models/model_from_json
 X. Saving model weights
