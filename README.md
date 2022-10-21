@@ -7,6 +7,9 @@ This repo is a specifed niche for computer vision applications using the cloud T
 
 I received access to cloud TPUs through TPU Research Cloud Program for computer vision research, and decided to open-source my scripts.
 
+TRC program:
+https://sites.research.google/trc/about/
+
 ### X. Usage of checkpoints
 - https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/ModelCheckpoint
 ### X. Saving models
