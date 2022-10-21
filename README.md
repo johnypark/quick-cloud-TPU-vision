@@ -20,7 +20,8 @@ https://sites.research.google/trc/about/
 
 ### X. Creating a TPU VM and the specification of TPUs
 
-### X. Adding additional storage place to the VM, and the price.
+### X. Persistant disk - Adding additional storage place to the VM, and the price.
+https://cloud.google.com/tpu/docs/storage-options#persistent-disk
 
 
 ## Training
