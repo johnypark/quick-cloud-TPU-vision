@@ -10,6 +10,14 @@ I received access to cloud TPUs through TPU Research Cloud Program for computer 
 TRC program:
 https://sites.research.google/trc/about/
 
+### X. Setting up the storage for training - gsbucket and Kaggle
+
+### X. Pricing estimation of gsbucket
+
+### X. Creating a TPU VM and the specification of TPUs
+
+### X. Adding additional storage place to the VM, and the price.
+
 ### X. Usage of checkpoints
 - https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/ModelCheckpoint
 ### X. Saving models
@@ -27,4 +35,4 @@ model.save_weights('model.h5')
 
 ### X. Saving csv
 - https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/CSVLogger
-X. 
+
