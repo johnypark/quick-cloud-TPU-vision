@@ -16,7 +16,7 @@ https://sites.research.google/trc/about/
 
 - Kaggle updates their gsbucket address every Tuesday. Therefore you need to set up a checkpoint if the training gets longer than a week, if you are using Kaggle. 
 - Not sure cloud TPU could utilze private Kaggle dataset. --> We should check on this.  
-### X. Pricing estimation of gsbucket
+### X. The pricing estimation of gsbucket
 
 ### X. Creating a TPU VM and the specification of TPUs
 
