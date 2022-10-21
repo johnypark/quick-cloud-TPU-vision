@@ -23,6 +23,13 @@ https://sites.research.google/trc/about/
 ### X. Persistant disk - Adding additional storage place to the VM, and the price.
 https://cloud.google.com/tpu/docs/storage-options#persistent-disk
 
+## Models
+
+### X. List of model backbones
+
+### X. How backbones are imported 
+
+### X. How to add layers after the penultimate layer
 
 ## Training
 
