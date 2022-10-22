@@ -27,6 +27,20 @@ https://cloud.google.com/tpu/docs/setup-persistent-disk
 ### X. TPU detection
 https://stackoverflow.com/questions/59289014/how-to-check-if-tpu-device-type-is-v2-or-v3
 Above does not work for TPU cloud, only works for colab TPU. Has not found any way to display the TPU version in TPU cloud
+```
+import tensorflow as tf
+import os
+
+try:
+  tpu = tf.distribute.cluster_resolver.TPUClusterResolver('local')  # TPU detection
+  #print('Running on TPU ', tpu.cluster_spec().as_dict()['worker'])
+except ValueError:
+  raise BaseException('ERROR: Not connected to a TPU runtime; please see the previous cell in this notebook for instructions!')
+
+tf.config.experimental_connect_to_cluster(tpu)
+tf.tpu.experimental.initialize_tpu_system(tpu)
+tpu_strategy = tf.distribute.TPUStrategy(tpu)
+```
 ## Models
 
 ### X. List of model backbones
