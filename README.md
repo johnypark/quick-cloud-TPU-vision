@@ -22,6 +22,7 @@ https://sites.research.google/trc/about/
 
 ### X. Persistant disk - Adding additional storage place to the VM, and the price.
 https://cloud.google.com/tpu/docs/storage-options#persistent-disk
+https://cloud.google.com/tpu/docs/setup-persistent-disk
 
 ## Models
 
