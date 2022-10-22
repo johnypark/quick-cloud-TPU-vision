@@ -41,6 +41,14 @@ tf.config.experimental_connect_to_cluster(tpu)
 tf.tpu.experimental.initialize_tpu_system(tpu)
 tpu_strategy = tf.distribute.TPUStrategy(tpu)
 ```
+### X. How to run the TPU vm on background
+
+command line - Keep processes running after SSH session disconnects - Unix & Linux Stack Exchange
+Nohup command ensures that ssh runs after it disconnects.
+
+### X. Now to run TPU vms like TPU clusters? (job submit, sending emails when finished, etc)
+Sending emails: 
+
 ## Models
 
 ### X. List of model backbones
