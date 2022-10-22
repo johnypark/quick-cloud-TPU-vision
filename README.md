@@ -24,6 +24,9 @@ https://sites.research.google/trc/about/
 https://cloud.google.com/tpu/docs/storage-options#persistent-disk
 https://cloud.google.com/tpu/docs/setup-persistent-disk
 
+### X. TPU detection
+https://stackoverflow.com/questions/59289014/how-to-check-if-tpu-device-type-is-v2-or-v3
+
 ## Models
 
 ### X. List of model backbones
