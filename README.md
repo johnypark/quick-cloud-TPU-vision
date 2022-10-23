@@ -22,7 +22,10 @@ https://sites.research.google/trc/about/
 
 ### X. Persistant disk - Adding additional storage place to the VM, and the price.
 https://cloud.google.com/tpu/docs/storage-options#persistent-disk
+
 https://cloud.google.com/tpu/docs/setup-persistent-disk
+
+SSD provisioned space is $0.187 per GB a month. They cost 62 cents for every 100GB per day.
 
 ### X. TPU detection
 https://stackoverflow.com/questions/59289014/how-to-check-if-tpu-device-type-is-v2-or-v3
