@@ -63,7 +63,10 @@ Public amazon S3 bucket files can be downloaded using wget with http:
 ```
  wget http://ml-inat-competition-datasets.s3.amazonaws.com/2021/train_mini.json.tar.gz
 ```
-
+- 2. Extract tar gz
+```
+tar -xvzf train_mini.json.tar.gz
+```
 
 
 
