@@ -37,7 +37,7 @@ gcloud compute tpus tpu-vm attach-disk $tpu-name \
 ```
 - 2. SSH into tpu-vm:
 ```
-gcloud compute tpus tpu-vm ssh tpu-name --zone zone
+gcloud alpha compute tpus tpu-vm ssh tpu-name --zone zone
 ```
 - 3. Format, mount, and set permission
 ```
