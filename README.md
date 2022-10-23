@@ -57,6 +57,10 @@ sudo mount -o discard,defaults /dev/sdb /mnt/disks/persist
 sudo chmod a+w D
 
 ```
+-4. Detach disk
+```
+gcloud alpha compute tpus tpu-vm detach-disk $tpu-name --disk=$disk-name --zone=$zone
+```
 ## Downloading data for pre-processing
 - 1. Amazon AWS
 Public amazon S3 bucket files can be downloaded using wget with http:
