@@ -27,7 +27,7 @@ https://cloud.google.com/tpu/docs/setup-persistent-disk
 
 SSD provisioned space is $0.187 per GB a month. They cost 62 cents for every 100GB per day.
 
-- Add persistant disk to existing tpu-vm:
+- 1. Add persistant disk to existing tpu-vm:
 ```
 gcloud compute tpus tpu-vm attach-disk $tpu-name \
  --zone=$zone \
@@ -35,6 +35,28 @@ gcloud compute tpus tpu-vm attach-disk $tpu-name \
  --mode=$disk-mode
 
 ```
+- 2. SSH into tpu-vm:
+```
+gcloud compute tpus tpu-vm ssh tpu-name --zone zone
+```
+- 3. Format, mount, and set permission
+```
+#List the dists attached to the tpu-vm
+sudo lsblk
+#Format the disk
+sudo mkfs.ext4 -m 0 -E lazy_itable_init=0,lazy_journal_init=0,discard /dev/sdb
+#Make a directory for the disk as a D drive
+sudo mkdir -p D
+#Mount the D drive
+sudo mount -o discard,defaults /dev/sdb /mnt/disks/persist
+#Set permissions for the persistent disk:
+sudo chmod a+w D
+
+```
+
+
+
+
 
 ### X. TPU detection
 https://stackoverflow.com/questions/59289014/how-to-check-if-tpu-device-type-is-v2-or-v3
