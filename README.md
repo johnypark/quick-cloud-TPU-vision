@@ -26,6 +26,13 @@ https://cloud.google.com/tpu/docs/storage-options#persistent-disk
 https://cloud.google.com/tpu/docs/setup-persistent-disk
 
 SSD provisioned space is $0.187 per GB a month. They cost 62 cents for every 100GB per day.
+```
+gcloud compute tpus tpu-vm attach-disk tpu-name \
+ --zone=zone \
+ --disk=disk-name \
+ --mode=disk-mode
+
+```
 
 ### X. TPU detection
 https://stackoverflow.com/questions/59289014/how-to-check-if-tpu-device-type-is-v2-or-v3
