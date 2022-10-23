@@ -51,6 +51,8 @@ Nohup command ensures that ssh runs after it disconnects.
 
 ### X. Now to run TPU vms like TPU clusters? (job submit, sending emails when finished, etc)
 Sending emails: 
+## Data
+Data must be prepared in TFRecord format, and cloud TPU only takes gsbucket as the source. 
 
 ## Models
 
